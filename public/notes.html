@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <script src="./assets/js/index.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
     <a class="navbar-brand" href="/">Note Taker
     </a>
     <div class="icons">
-      <i class="fas fa-save text-light save-note"></i>
+      <a href="/api/notes"><i class="fas fa-save text-light save-note"></i></a>
       <i class="fas fa-pen text-light new-note"></i>
     </div>
   </nav>
@@ -30,9 +31,10 @@
         </div>
       </div>
       <div class="col-8">
-        <input class="note-title" placeholder="Note Title" maxlength="28" type="text">
-        <textarea class="note-textarea" placeholder="Note Text"></textarea>
+        <h1><input name=title class="note-title" placeholder="Note Title" maxlength="28" type="text"></h1>
+        <h5><textarea name=text class="note-textarea" placeholder="Note Text"></textarea></h5>
       </div>
+          
     </div>
   </div>
   <script src="/assets/js/index.js"></script>
